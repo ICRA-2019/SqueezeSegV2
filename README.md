@@ -32,6 +32,16 @@ Please refer to our video for a high level introduction of this work: https://ww
 ## License
 **SqueezeSegV2** is released under the BSD license (See [LICENSE](https://github.com/xuanyuzhou98/SqueezeSegV2/blob/master/LICENSE) for details). The **dataset** used for training, evaluation, and demostration of SqueezeSegV2 is modified from [KITTI](http://www.cvlibs.net/datasets/kitti/) raw dataset. For your convenience, we provide links to download the converted dataset, which is distrubited under the [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 License](https://creativecommons.org/licenses/by-nc-sa/3.0/).
 
+## Demo without installation:
+
+Prerequisite: [rocker](https://github.com/osrf/rocker)
+
+```
+mkdir /tmp/samples_out && \
+rocker --volume /tmp/samples_out:/SqueezeSegV2/data/samples_out:rw \
+  --nvidia ghcr.io/icra-2019/squeezesegv2:master
+```
+
 ## Installation:
 
 The instructions are tested on Ubuntu 16.04 with python 2.7 and tensorflow 1.4 with GPU support. 
